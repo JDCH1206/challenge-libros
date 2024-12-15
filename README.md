@@ -1,6 +1,28 @@
 
 <h1 align="center"> LiterAlura - Challenge </h1>
 
+<p align="center">
+  <img 
+    src="https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/logo.png" 
+    alt="logo" 
+    width="200" 
+    height="200" 
+  />
+</p>
+
+---
+<p align="center">
+  <img 
+    src="https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/LogoJDCH.png" 
+    alt="logo" 
+    width="200" 
+    height="200" 
+  />
+  <br />
+  <span style="display: block; text-align: center; font-size: 16px; font-weight: bold;">DESARROLLADOR</span>
+</p>
+
+
 
 <p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 50px; flex-wrap: wrap;">
 
