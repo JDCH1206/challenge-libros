@@ -184,7 +184,14 @@ El aplicativo presenta las siguientes opciones para interactuar con la base de d
    Al buscar libros por título, el sistema realiza solicitudes a la API **Gutendex** para obtener datos actualizados.
 
 Este flujo asegura una experiencia de usuario intuitiva y una integración fluida con la base de datos y la API.
+---
+## Pruebas
 
+El funcionamiento del conversor fue verificado mediante diversas pruebas, cuyo proceso se describe a continuación:
+
+1. **Inicio del Programa y Selección de Conversión**:
+   - Se muestra un menú inicial donde el usuario puede seleccionar el tipo de conversión.  
+   ![Imagen de entrada](https://github.com/JDCH1206/CONV-MONEDA/blob/master/Imagenes%20Prueba/Archivo%201.png)
 ---
 ## Notas finales
 
