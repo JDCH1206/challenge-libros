@@ -135,6 +135,7 @@ public class Principal {
         for (int i = 0; i < idiomas.size(); i++) {
             System.out.println(i+1 +" Opción idioma: " + idiomas.get(i));
         }
+        System.out.println("Por favor ingresa el número que corresponde al idioma seleccionado: ");
         int opcionIdioma =digitar.ingresarNumeroEntero();
         digitar.limpiarLinea();
         String idiomaSeleccionado = idiomas.get(opcionIdioma-1);
