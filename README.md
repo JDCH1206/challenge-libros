@@ -257,9 +257,49 @@ El funcionamiento del sistema fue verificado mediante diversas pruebas. A contin
     Al seleccionar la opción de salida, se muestra un mensaje de despedida y el programa finaliza.  
     ![Salida Aplicativo](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/SalidaAplicativo.png)
 
+[Ver video prueba](https://github.com/JDCH1206/challenge-libros/issues/2)
 ---
+## Uso e Instalación
 
+1. **Clona el repositorio en tu máquina local**:  
+   Ejecuta el siguiente comando en tu terminal:
 
+   ```bash
+   git clone https://github.com/JDCH1206/challenge-libros.git
+   ```
+## **Recomendaciones de Configuración**
+
+### 1. **Creación de la Base de Datos**
+Antes de ejecutar el proyecto, crea una base de datos en **PostgreSQL**:
+
+```sql
+CREATE DATABASE literatura;
+```
+## **2. Configuración de Variables de Entorno**
+Define las siguientes variables de entorno en tu sistema:
+
+- **En sistemas Unix/Linux**:
+   ```bash
+   export DB_HOST_PRUEBA=localhost
+   export DB_LITERATURA=literatura
+   export DB_USER_PRUEBA=tu_usuario
+   export DB_PASSWORD=tu_password
+   ```
+- **En sistemas Windows (PowerShell)**:
+   ```bash
+   $env:DB_HOST_PRUEBA = "localhost"
+   $env:DB_LITERATURA = "literatura"
+   $env:DB_USER_PRUEBA = "tu_usuario"
+   $env:DB_PASSWORD = "tu_password"
+   ```
+### 3. Revisión del Archivo application.properties
+Si no necesitas ver las consultas SQL de Hibernate, elimina o comenta las siguientes líneas:
+
+#### **properties**
+   ```bash
+   spring.jpa.show-sql=true       # Muestra las consultas SQL en consola
+   spring.jpa.format-sql=true     # Formatea las consultas SQL
+   ```
 ---
 ## Notas finales
 
