@@ -2,23 +2,41 @@
 <h1 align="center"> LiterAlura - Challenge </h1>
 
 
-<p align="center">
-<a href="https://www.linkedin.com/in/juandchacon/">
-  <img 
-    src="" 
-    align="center" 
-    alt="logo" 
-    width="30" 
-    height="30" 
-  />
-</a>
-  <a href="https://github.com/JDCH1206" alt="perfil desarrollador"><img src="https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/logoGitHub2.png"
-                                                                     width="30" 
-    height="30" />
+<p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap;">
+
+  <a href="https://www.linkedin.com/in/juandchacon/" style="display: flex; flex-direction: column; align-items: center;">
+    <img 
+      src="https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/logoLink.png" 
+      alt="LinkedIn logo" 
+      width="100" 
+      height="90" 
+    />
+    <span>LinkedIn</span>
   </a>
-<a href="#pruebas"><img src="https://img.shields.io/badge/tested_with-jest-99424f.svg" alt="Tested with Jest"></a>
+
+  <a href="https://github.com/JDCH1206" alt="Perfil desarrollador" style="display: flex; flex-direction: column; align-items: center;">
+    <img 
+      src="https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/logoGitHub2.png"
+      alt="GitHub logo"
+      width="50" 
+      height="50" 
+    />
+    <span>GitHub</span>
+  </a>
+
+  <a href="#pruebas" style="display: flex; flex-direction: column; align-items: center;">
+    <img 
+      src="https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/testLogo.png" 
+      alt="Tested" 
+      width="50" 
+      height="50" 
+    />
+    <span>Pruebas</span>
+  </a>
 
 </p>
+
+---
 
 ## Introducción
 
