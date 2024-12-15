@@ -1,4 +1,13 @@
-# LiterAlura - Challenge
+
+<h1 align="center"> LiterAlura - Challenge </h1>
+
+
+<p align="center">
+  <a href=""><img src="https://img.shields.io/twitter/follow/docusaurus.svg?style=social" align="right" alt="Twitter Follow" /></a>
+  <a href="https://github.com/JDCH1206" alt="sponsors on Open Collective"><img src="https://opencollective.com/Docusaurus/backers/badge.svg" /></a>
+<a href="#pruebas"><img src="https://img.shields.io/badge/tested_with-jest-99424f.svg" alt="Tested with Jest"></a>
+
+</p>
 
 ## Introducción
 
@@ -187,11 +196,119 @@ Este flujo asegura una experiencia de usuario intuitiva y una integración fluid
 ---
 ## Pruebas
 
-El funcionamiento del conversor fue verificado mediante diversas pruebas, cuyo proceso se describe a continuación:
+El funcionamiento del sistema fue verificado mediante diversas pruebas. A continuación, se describe el proceso y resultados para cada una de las opciones del menú principal:
 
-1. **Inicio del Programa y Selección de Conversión**:
-   - Se muestra un menú inicial donde el usuario puede seleccionar el tipo de conversión.  
-   ![Imagen de entrada](https://github.com/JDCH1206/CONV-MONEDA/blob/master/Imagenes%20Prueba/Archivo%201.png)
+1. **Inicio del Programa y Saludo Inicial**  
+   Se muestra un mensaje de bienvenida inicial al usuario.  
+   ![Imagen de entrada](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/SaludoInicial.png)
+
+2. **Menú Principal**  
+   Se despliega el menú principal con todas las opciones disponibles.  
+   ![Menú Inicial](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/MenuPrincipal.png)
+
+3. **Opción 1 - Buscar libro por título**  
+   El usuario puede buscar libros por su título.  
+   ![Opción 1](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/ResultadoOpcion1.png)
+
+4. **Opción 2 - Buscar libros por idioma**  
+   Muestra una lista de libros en función del idioma seleccionado.  
+   ![Opción 2](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/ResultadoOpcion2.png)
+
+5. **Opción 3 - Buscar libros por autor**  
+   Permite buscar libros en la base de datos por el nombre del autor.  
+   ![Opción 3](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/ResultadoOpcion3.png)
+
+6. **Opción 4 - Buscar libros por rango de descargas**  
+   Se listan libros en función del rango de número de descargas definido.  
+   ![Opción 4](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/ResultadoOpcion4.png)
+
+7. **Opción 5 - Buscar autor por rango de fecha de nacimiento**  
+   El usuario ingresa un rango de fechas de nacimiento y se filtran los autores correspondientes.  
+   - **Selección de rango**  
+     ![Opción 5 Selección](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/SeleccionOpcion5.png)  
+   - **Resultado**  
+     ![Opción 5 Resultado](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/ResultadoOpcion5.png)
+
+8. **Opción 6 - Buscar autor por rango de fecha de fallecimiento**  
+   Similar a la opción anterior, pero filtrando autores por rango de fechas de fallecimiento.  
+   - **Selección de rango**  
+     ![Opción 6 Selección](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/SeleccionOpcion6.png)  
+   - **Resultado**  
+     ![Opción 6 Resultado](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/ResultadoOpcion6.png)
+
+9. **Opción 7 - Buscar autor por edad**  
+   Filtra autores que coincidan con la edad especificada por el usuario.  
+   - **Selección de edad**  
+     ![Opción 7 Selección](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/SeleccionOpcion7.png)  
+   - **Resultado**  
+     ![Opción 7 Resultado](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/ResultadoOpcion7.png)
+
+10. **Opción 8 - Buscar autor por rango de edad**  
+    Permite buscar autores dentro de un rango específico de edad.  
+    - **Selección de rango de edad**  
+      ![Opción 8 Selección](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/SeleccionOpcion8.png)  
+    - **Resultado**  
+      ![Opción 8 Resultado](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/ResultadoOpcion8.png)
+
+11. **Opción 9 - Mostrar todos los libros en la base de datos**  
+    Se listan todos los libros almacenados en la base de datos.  
+    ![Opción 9](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/ResultadoOpcion9.png)
+
+12. **Opción 10 - Estadísticas de Autores**  
+    Muestra estadísticas relevantes sobre los autores registrados en la base de datos.  
+    ![Opción 10](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/ResultadoOpcion10.png)
+
+13. **Opción 11 - Estadísticas de Libros**  
+    Muestra estadísticas relevantes sobre los libros almacenados en la base de datos.  
+    ![Opción 11](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/ResultadoOpcion11.png)
+
+14. **Salida del Aplicativo**  
+    Al seleccionar la opción de salida, se muestra un mensaje de despedida y el programa finaliza.  
+    ![Salida Aplicativo](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/SalidaAplicativo.png)
+
+[Ver video prueba](https://github.com/JDCH1206/challenge-libros/issues/2)
+---
+## Uso e Instalación
+
+1. **Clona el repositorio en tu máquina local**:  
+   Ejecuta el siguiente comando en tu terminal:
+
+   ```bash
+   git clone https://github.com/JDCH1206/challenge-libros.git
+   ```
+## **Recomendaciones de Configuración**
+
+### 1. **Creación de la Base de Datos**
+Antes de ejecutar el proyecto, crea una base de datos en **PostgreSQL**:
+
+```sql
+CREATE DATABASE literatura;
+```
+## **2. Configuración de Variables de Entorno**
+Define las siguientes variables de entorno en tu sistema:
+
+- **En sistemas Unix/Linux**:
+   ```bash
+   export DB_HOST_PRUEBA=localhost
+   export DB_LITERATURA=literatura
+   export DB_USER_PRUEBA=tu_usuario
+   export DB_PASSWORD=tu_password
+   ```
+- **En sistemas Windows (PowerShell)**:
+   ```bash
+   $env:DB_HOST_PRUEBA = "localhost"
+   $env:DB_LITERATURA = "literatura"
+   $env:DB_USER_PRUEBA = "tu_usuario"
+   $env:DB_PASSWORD = "tu_password"
+   ```
+### 3. Revisión del Archivo application.properties
+Si no necesitas ver las consultas SQL de Hibernate, elimina o comenta las siguientes líneas:
+
+#### **properties**
+   ```bash
+   spring.jpa.show-sql=true       # Muestra las consultas SQL en consola
+   spring.jpa.format-sql=true     # Formatea las consultas SQL
+   ```
 ---
 ## Notas finales
 
