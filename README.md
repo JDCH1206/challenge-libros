@@ -3,16 +3,19 @@
 
 
 <p align="center">
-<a href="">
+<a href="https://www.linkedin.com/in/juandchacon/">
   <img 
-    src="https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/logoGitHub2.png" 
+    src="" 
     align="center" 
     alt="logo" 
     width="30" 
     height="30" 
   />
 </a>
-  <a href="https://github.com/JDCH1206" alt="sponsors on Open Collective"><img src="https://opencollective.com/Docusaurus/backers/badge.svg" /></a>
+  <a href="https://github.com/JDCH1206" alt="perfil desarrollador"><img src="https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/logoGitHub2.png"
+                                                                     width="30" 
+    height="30" />
+  </a>
 <a href="#pruebas"><img src="https://img.shields.io/badge/tested_with-jest-99424f.svg" alt="Tested with Jest"></a>
 
 </p>
