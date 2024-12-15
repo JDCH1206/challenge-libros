@@ -12,6 +12,11 @@
   />
 </p>
 
+
+## Autor
+
+| [<img src="https://avatars.githubusercontent.com/u/162773501?s=400&u=57aca56019452bb2dedb26670ce0024b1c702c20&v=4" width=115><br><sub>Juan David Chacon</sub>](https://github.com/camilafernanda) |
+| :---: 
 ---
 <p align="center">
   <img 
