@@ -58,23 +58,26 @@ El proyecto está organizado en los siguientes paquetes para una mejor modularid
 
 Se generaron varias interfaces para definir las operaciones necesarias en cada módulo, siguiendo los principios de POO:
 
-- **[](https://github.com/JDCH1206/CONV-MONEDA/blob/master/src/com/JDCH/conversorMoneda/modulos/IBuscarEnApi.java)**: Define métodos para realizar solicitudes a la API.
-- **[IComunicacionAppUsuario](https://github.com/JDCH1206/CONV-MONEDA/blob/master/src/com/JDCH/conversorMoneda/modulos/IComunicacionAppUsuario.java)**: Interfaz para la comunicación de la app hacia el usuario.
-- **[IComunicacionUsuarioApp](https://github.com/JDCH1206/CONV-MONEDA/blob/master/src/com/JDCH/conversorMoneda/modulos/IComunicacionUsuarioApp.java)**: Interfaz para la comunicación del usuario hacia la app.
-- **[ICrearArchivo](https://github.com/JDCH1206/CONV-MONEDA/blob/master/src/com/JDCH/conversorMoneda/modulos/ICrearArchivo.java)**: Define métodos para la creación y escritura de archivos.
-- **[ICalculosConversion](https://github.com/JDCH1206/CONV-MONEDA/blob/master/src/com/JDCH/conversorMoneda/calculos/ICalculosConversion.java)**: Define las operaciones necesarias para realizar conversiones.
-
+- **[AutorRepository](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/java/com/alurachallenge/jdch/repository/AutorRepository.java)**: Define métodos para realizar solicitudes a la API.
+- **[LibroRepository](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/java/com/alurachallenge/jdch/repository/LibroRepository.java)**: Interfaz para la comunicación de la app hacia el usuario.
+- **[IComunicacionAppUsuario](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/java/com/alurachallenge/jdch/view/IComunicacionAppUsuario.java)**: Interfaz para la comunicación de la app hacia el usuario.
+- **[IIngresarDatos](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/java/com/alurachallenge/jdch/utils/IIngresarDatos.java)**: Interfaz para la comunicación del usuario hacia la app.
+- **[IConvertirDatos](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/java/com/alurachallenge/jdch/service/IConvertirDatos.java)**: convierte los datos suministrados por la api a clases.
+---
 ### Clases
 
 Cada clase se diseñó para implementar una interfaz o manejar una funcionalidad específica:
 
-- **[SolicitarDatosApi](https://github.com/JDCH1206/CONV-MONEDA/blob/master/src/com/JDCH/conversorMoneda/modulos/SolicitarDatosApi.java)**: Implementa `IBuscarEnApi` y maneja las solicitudes a la API.
-- **[ComunicacionAppAUsuario](https://github.com/JDCH1206/CONV-MONEDA/blob/master/src/com/JDCH/conversorMoneda/modulos/ComunicacionAppAUsuario.java)**: Implementa `IComunicacionAppUsuario` y maneja los mensajes y la comunicación hacia el usuario.
-- **[ComunicacionUsuarioAApp](https://github.com/JDCH1206/CONV-MONEDA/blob/master/src/com/JDCH/conversorMoneda/modulos/ComunicacionUsuarioAApp.java)**: Implementa `IComunicacionUsuarioApp` y Controla las interacciones de entrada del usuario hacia la app.
-- **[CrearEscribirArchivo](https://github.com/JDCH1206/CONV-MONEDA/blob/master/src/com/JDCH/conversorMoneda/modulos/CrearEscribirArchivo.java)**: Implementa `ICrearArchivo` y maneja la creación y escritura de archivos de registro.
-- **[Calculo](https://github.com/JDCH1206/CONV-MONEDA/blob/master/src/com/JDCH/conversorMoneda/calculos/Calculo.java)**: Implementa `ICalculosConversion` y contiene la lógica de cálculo para la conversión de moneda.
+- **[ConsumoAPI](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/java/com/alurachallenge/jdch/service/ConsumoAPI.java)**: maneja las solicitudes a la API.
+- **[ComunicacionAppAUsuario](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/java/com/alurachallenge/jdch/view/ComunicacionAppUsuario.java)**: Implementa `IComunicacionAppUsuario` y maneja los mensajes y la comunicación hacia el usuario.
+- **[IngresarDatos](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/java/com/alurachallenge/jdch/utils/IngresarDatos.java)**: Implementa `IIngresarDatos` y Controla las interacciones de entrada del usuario hacia la app.
 - **[Principal](https://github.com/JDCH1206/CONV-MONEDA/blob/master/src/com/JDCH/conversorMoneda/principal/Principal.java)**: Clase principal que inicia el flujo de la aplicación.
-- **[PrincipalOptimizada](https://github.com/JDCH1206/CONV-MONEDA/blob/master/src/com/JDCH/conversorMoneda/principal/PrincipalOptimizada.java)**: Variante de la clase principal, optimizada para pruebas adicionales o funcionalidad ampliada.
+- **[Autor](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/java/com/alurachallenge/jdch/model/Autor.java)**: Clase que representa a un autor en el sistema, incluyendo atributos como nombre, fecha de nacimiento, fecha de fallecimiento y edad, además de su relación con los libros.
+- **[Libro](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/java/com/alurachallenge/jdch/model/Libro.java)**: Clase que representa un libro en el sistema, incluyendo atributos como título, idioma, número de descargas, y su relación con los autores.
+- **[ConvertirDatos](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/java/com/alurachallenge/jdch/service/ConvertirDatos.java)**: Clase que implementa la interfaz `IConvertirDatos` para manejar la conversión de datos JSON a objetos de tipo Java. Utiliza la biblioteca `Jackson` y su clase `ObjectMapper` para deserializar cadenas JSON en objetos del tipo especificado, facilitando la integración con datos provenientes de APIs.
+- **[JdchlibrosApplication](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/java/com/alurachallenge/jdch/JdchlibrosApplication.java)**: Clase principal del proyecto que actúa como el punto de entrada de la aplicación **Spring Boot**. Implementa `CommandLineRunner` para ejecutar la lógica de la aplicación al iniciar. Se encarga de instanciar la clase `Principal`, la cual gestiona el menú principal de la aplicación y las interacciones del usuario. Además, inyecta repositorios `LibroRepository` y `AutorRepository` necesarios para la persistencia de datos en la base de datos.
+
+---
 
 ### Record `Monedas`
 
