@@ -79,13 +79,49 @@ Cada clase se diseñó para implementar una interfaz o manejar una funcionalidad
 
 ---
 
-### Record `Monedas`
+### Record 
 
-Este record se diseñó para obtener los datos de la API y darle una estructura de objeto en Java. Esto facilita el manejo de los datos obtenidos de la API, permitiendo acceder a ellos de manera organizada y orientada a objetos.
+Un record en Java se diseñó específicamente para encapsular datos de manera eficiente, eliminando la necesidad de escribir métodos comunes como constructores, toString(), equals(), y hashCode(). En este proyecto, los records se utilizan para mapear directamente los datos obtenidos de la API y transformarlos en estructuras de objetos Java. Esto simplifica la manipulación y el acceso a los datos, permitiendo:
 
-- **[Monedas](https://github.com/JDCH1206/CONV-MONEDA/blob/master/src/com/JDCH/conversorMoneda/modulos/Monedas.java)**: Este record define la estructura de los datos de tipo `Monedas`, que representan las tasas de cambio obtenidas de la API. Incluye atributos para cada moneda y sus tasas de conversión, permitiendo una fácil integración y manipulación dentro de la aplicación.
+Lectura clara y organizada: Los datos son accesibles mediante nombres descriptivos que coinciden con los atributos en el JSON.
+Reducción de código repetitivo: Gracias al uso de records, se evita la necesidad de escribir manualmente métodos comunes y constructores.
+Facilidad de integración: Los records, en combinación con herramientas como Jackson, permiten una integración directa con la API al mapear automáticamente los datos JSON en objetos Java.
+Estos records son esenciales para estructurar de manera robusta los datos provenientes de la API Gutendex, asegurando que puedan ser procesados eficientemente en el sistema.
 
+- **[DatosLibros](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/java/com/alurachallenge/jdch/model/DatosLibros.java)**: Este record define la estructura para representar los datos obtenidos de la API **Gutendex** relacionados con una lista de libros. Utiliza las anotaciones de `Jackson` (`@JsonAlias` y `@JsonIgnoreProperties`) para mapear automáticamente los datos JSON en un objeto de tipo Java. El atributo principal, `libros`, es una lista de objetos `DatosLibro` que contiene la información detallada de cada libro, permitiendo una integración eficiente con la API.
+- **[DatosLibro](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/java/com/alurachallenge/jdch/model/DatosLibro.java)**: Este record representa la estructura de un libro obtenido desde la API **Gutendex**. Utiliza las anotaciones de `Jackson` (`@JsonAlias` y `@JsonIgnoreProperties`) para mapear automáticamente los datos JSON a objetos Java. Los atributos incluyen:
+  - `titulo`: El título del libro.
+  - `autor`: Una lista de objetos `DatosAutor`, que representan la información de los autores del libro.
+  - `lenguaje`: Una lista de cadenas que especifican los idiomas disponibles del libro.
+  - `numeroDescargas`: El número total de descargas del libro.
+  
+Este record simplifica la integración y manipulación de datos de libros obtenidos de la API.
+
+- **[DatosLibro](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/java/com/alurachallenge/jdch/model/DatosLibro.java)**: Este record representa la estructura de un libro obtenido desde la API **Gutendex**. Utiliza las anotaciones de `Jackson` (`@JsonAlias` y `@JsonIgnoreProperties`) para mapear automáticamente los datos JSON a objetos Java. Los atributos incluyen:
+
+  - **`titulo`**: El título del libro, representado como una cadena de texto.
+  - **`autor`**: Una lista de objetos `DatosAutor`, que representan la información de los autores asociados con el libro.
+  - **`lenguaje`**: Una lista de cadenas que especifican los idiomas disponibles del libro.
+  - **`numeroDescargas`**: El número total de descargas del libro, representado como un número entero.
+---
 ## Modo de Uso
+
+el aplicativo tiene las siguientes opciones 
+
+
+1)  Buscar libro por titulo 
+2)  Buscar en la base de datos libro por idioma 
+3)  Buscar libros por Autor en la base de datos
+4)  Buscar libros por rango de número de descargas en la base de datos
+5)  Buscar Autor por rango de fecha de nacimiento en la base de datos
+6)  Buscar Autor por rango de fecha de fallecimiento en la base de datos
+7)  Buscar Autor por edad
+8)  Buscar Autor por rango de edad en la base de datos        
+9)  Mostrar la totalidad de libros existentes en la base de datos
+10) Estadisticas Autores 
+11) Estadisticas Libros    
+0) salir
+            
 ---
 ## Notas finales
 
