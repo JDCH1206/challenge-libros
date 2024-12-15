@@ -3,7 +3,15 @@
 
 
 <p align="center">
-  <a href=""><img src="https://img.shields.io/twitter/follow/docusaurus.svg?style=social" align="right" alt="Twitter Follow" /></a>
+<a href="">
+  <img 
+    src="https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/logoGitHub2.png" 
+    align="center" 
+    alt="logo" 
+    width="30" 
+    height="30" 
+  />
+</a>
   <a href="https://github.com/JDCH1206" alt="sponsors on Open Collective"><img src="https://opencollective.com/Docusaurus/backers/badge.svg" /></a>
 <a href="#pruebas"><img src="https://img.shields.io/badge/tested_with-jest-99424f.svg" alt="Tested with Jest"></a>
 
