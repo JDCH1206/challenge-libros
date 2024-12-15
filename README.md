@@ -2,7 +2,7 @@
 <h1 align="center"> LiterAlura - Challenge </h1>
 
 
-<p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap;">
+<p align="center" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 50px; flex-wrap: wrap;">
 
   <a href="https://www.linkedin.com/in/juandchacon/" style="display: flex; flex-direction: column; align-items: center;">
     <img 
