@@ -97,31 +97,94 @@ Estos records son esenciales para estructurar de manera robusta los datos proven
   
 Este record simplifica la integración y manipulación de datos de libros obtenidos de la API.
 
-- **[DatosLibro](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/java/com/alurachallenge/jdch/model/DatosLibro.java)**: Este record representa la estructura de un libro obtenido desde la API **Gutendex**. Utiliza las anotaciones de `Jackson` (`@JsonAlias` y `@JsonIgnoreProperties`) para mapear automáticamente los datos JSON a objetos Java. Los atributos incluyen:
+- **[DatosAutor](https://github.com/JDCH1206/challenge-libros/blob/master/src/main/java/com/alurachallenge/jdch/model/DatosAutor.java)**: Este record representa la estructura de un autor obtenido desde la API **Gutendex**. Utiliza las anotaciones de `Jackson` (`@JsonAlias`) para mapear automáticamente los datos JSON a objetos Java. Los atributos incluyen:
 
-  - **`titulo`**: El título del libro, representado como una cadena de texto.
-  - **`autor`**: Una lista de objetos `DatosAutor`, que representan la información de los autores asociados con el libro.
-  - **`lenguaje`**: Una lista de cadenas que especifican los idiomas disponibles del libro.
-  - **`numeroDescargas`**: El número total de descargas del libro, representado como un número entero.
+  - **`nombre`**: El nombre del autor, representado como una cadena de texto.
+  - **`fechaNacimiento`**: El año de nacimiento del autor, representado como un número entero.
+  - **`fechaMuerte`**: El año de fallecimiento del autor, también representado como un número entero. Este atributo puede ser `null` si el autor sigue vivo.
+
+Este record simplifica la integración y manipulación de datos de autores obtenidos de la API.
+
+### Descripción
+
+- **Uso de `@JsonAlias`**: Permite mapear los nombres de los campos del JSON (como `"name"`, `"birth_year"`, `"death_year"`) a los atributos definidos en el record.
+- **Atributos clave**:
+  - **`nombre`**: Mapea el campo `"name"` del JSON, que contiene el nombre del autor.
+  - **`fechaNacimiento`**: Mapea el campo `"birth_year"` del JSON, que especifica el año de nacimiento del autor.
+  - **`fechaMuerte`**: Mapea el campo `"death_year"` del JSON, que especifica el año de fallecimiento del autor o es `null` si no aplica.
+
 ---
 ## Modo de Uso
 
-el aplicativo tiene las siguientes opciones 
+El aplicativo presenta las siguientes opciones para interactuar con la base de datos y la API **Gutendex**:
 
+### Menú de Opciones
 
-1)  Buscar libro por titulo 
-2)  Buscar en la base de datos libro por idioma 
-3)  Buscar libros por Autor en la base de datos
-4)  Buscar libros por rango de número de descargas en la base de datos
-5)  Buscar Autor por rango de fecha de nacimiento en la base de datos
-6)  Buscar Autor por rango de fecha de fallecimiento en la base de datos
-7)  Buscar Autor por edad
-8)  Buscar Autor por rango de edad en la base de datos        
-9)  Mostrar la totalidad de libros existentes en la base de datos
-10) Estadisticas Autores 
-11) Estadisticas Libros    
-0) salir
-            
+1. **Buscar libro por título**  
+   Permite buscar un libro específico en la API **Gutendex** por título y agregarlo a la base de datos, si no existe.
+
+2. **Buscar libro por idioma en la base de datos**  
+   Filtra y muestra los libros almacenados en la base de datos por el idioma seleccionado.
+
+3. **Buscar libros por autor en la base de datos**  
+   Busca y muestra todos los libros en la base de datos que estén relacionados con un autor específico.
+
+4. **Buscar libros por rango de número de descargas en la base de datos**  
+   Permite filtrar libros por un rango definido de descargas.
+
+5. **Buscar autor por rango de fecha de nacimiento en la base de datos**  
+   Muestra los autores nacidos dentro de un rango de fechas específico.
+
+6. **Buscar autor por rango de fecha de fallecimiento en la base de datos**  
+   Busca autores que hayan fallecido dentro de un rango de fechas específico.
+
+7. **Buscar autor por edad**  
+   Filtra autores que tengan una edad exacta especificada.
+
+8. **Buscar autor por rango de edad en la base de datos**  
+   Busca y muestra autores cuyas edades estén dentro de un rango definido.
+
+9. **Mostrar todos los libros existentes en la base de datos**  
+   Lista todos los libros almacenados en la base de datos.
+
+10. **Estadísticas de autores**  
+    Genera y muestra estadísticas relevantes sobre los autores almacenados en la base de datos.
+
+11. **Estadísticas de libros**  
+    Genera y muestra estadísticas relevantes sobre los libros almacenados en la base de datos.
+
+0. **Salir**  
+   Finaliza la ejecución del programa.
+
+---
+
+### Instrucciones de Uso
+
+1. **Seleccionar una opción del menú**  
+   El usuario selecciona una de las opciones del menú principal para interactuar con la base de datos o la API.
+
+2. **Proporcionar información requerida**  
+   Según la opción seleccionada, el sistema puede solicitar datos adicionales como un rango de fechas, un autor o un título de libro.
+
+3. **Revisar los resultados**  
+   El sistema mostrará los resultados en pantalla basados en la consulta realizada. Si no hay datos coincidentes, se mostrará un mensaje indicando que no se encontraron resultados.
+
+4. **Decidir continuar o salir**  
+   - Si el usuario desea realizar otra operación, puede seleccionar una nueva opción del menú principal.
+   - Si el usuario desea salir, selecciona la opción `0`, y el programa muestra un mensaje de despedida antes de cerrar.
+
+---
+
+### Notas adicionales
+
+- **Persistencia de datos**  
+   Toda la información se almacena en una base de datos **PostgreSQL**, y las consultas se realizan utilizando **Spring JPA** para garantizar eficiencia y escalabilidad.
+
+- **Uso de la API**  
+   Al buscar libros por título, el sistema realiza solicitudes a la API **Gutendex** para obtener datos actualizados.
+
+Este flujo asegura una experiencia de usuario intuitiva y una integración fluida con la base de datos y la API.
+
 ---
 ## Notas finales
 
