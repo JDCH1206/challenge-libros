@@ -1,6 +1,8 @@
 
 <h1 align="center"> LiterAlura - Challenge </h1>
-
+<h4 align="center">
+:construction: Proyecto en construcción :construction:
+</h4>
 <p align="center">
   <img 
     src="https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/logo.png" 
