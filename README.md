@@ -2,7 +2,7 @@
 <h1 align="center"> LiterAlura - Challenge </h1>
 
 
-<p align="center" style="display: flex; justify-content: center; gap: 20px; align-items: center; flex-wrap: wrap;">
+<p align="center" style="display: flex; justify-content: center; gap: 40px; align-items: center; flex-wrap: wrap;">
   <a href="https://www.linkedin.com/in/juandchacon/">
     <img 
       src="https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/logoLink.png" 
@@ -11,6 +11,7 @@
       height="90" 
     />
   </a>
+
   <a href="https://github.com/JDCH1206" alt="Perfil desarrollador">
     <img 
       src="https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/logoGitHub2.png"
@@ -19,6 +20,7 @@
       height="50" 
     />
   </a>
+
   <a href="#pruebas">
     <img 
       src="https://github.com/JDCH1206/challenge-libros/blob/master/src/main/resources/testimages/testLogo.png" 
@@ -28,6 +30,7 @@
     />
   </a>
 </p>
+
 
 
 ## Introducción
